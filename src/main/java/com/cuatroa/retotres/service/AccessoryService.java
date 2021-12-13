@@ -46,13 +46,16 @@ public class AccessoryService {
                 if (accesory.getBrand() != null) {
                     accesoryDb.get().setBrand(accesory.getBrand());
                 }
+                if (accesory.getDimensiones() != null){
+                    accesoryDb.get().setDimensiones(accesory.getMateriales());
+                }
 
                 if (accesory.getCategory() != null) {
                     accesoryDb.get().setCategory(accesory.getCategory());
                 }
 
-                if (accesory.getMaterial() != null) {
-                    accesoryDb.get().setMaterial(accesory.getMaterial());
+                if (accesory.getMateriales() != null) {
+                    accesoryDb.get().setMateriales(accesory.getMateriales());
                 }
 
                 if (accesory.getDescription() != null) {
